@@ -5,10 +5,10 @@ const browserSync = require('browser-sync').create();
 
 function style() {
     return gulp
-        .src("./scss/**/*.scss")
+        .src("./static/scss/**/*.scss")
         .pipe(sass())
         .on("error", sass.logError)
-        .pipe(gulp.dest("./css"))
+        .pipe(gulp.dest("./static/css"))
         .pipe(browserSync.stream())
 }
 
