@@ -1,0 +1,13 @@
+@import "../abstract/variables";
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px 5px 20px;
+    & .heading {
+        color: $heading-color;
+        & p {
+            padding: 5px 0;
+            color: $sub-heading-color;
+        }
+    }
+}

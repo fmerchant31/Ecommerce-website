@@ -1,0 +1,24 @@
+button {
+    cursor: pointer;
+}
+
+nav {
+    & button {
+        border: transparent;
+        border-radius: 5px;
+        padding: 10px;
+        margin: 0 4px;
+    }
+    & .import-btn,
+    & .filter-btn {
+        background: white;
+    }
+    & .download-btn {
+        color: white;
+        background-color: $button-color;
+    }
+    & i {
+        padding: 0 5px;
+        margin-right: 5px;
+    }
+}

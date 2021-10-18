@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '7b2459b44ae0ed01377e350bbbdba5730df9ab26',
+        'reference' => '1f4d2318813034e952f1e1e66a7af2624fb3540c',
         'name' => '__root__',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '7b2459b44ae0ed01377e350bbbdba5730df9ab26',
+            'reference' => '1f4d2318813034e952f1e1e66a7af2624fb3540c',
             'dev_requirement' => false,
         ),
         'symfony/deprecation-contracts' => array(
