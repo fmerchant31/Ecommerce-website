@@ -1,0 +1,24 @@
+.card {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+    background: #fff;
+    border-radius: 5px;
+    & img {
+        // max-width: 340px;
+        max-height: 200px;
+        // object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+    & p {
+        background-color: #fff;
+        padding: 5px;
+        margin-top: 5px;
+    }
+    & .price {
+        color: $sub-heading-color;
+    }
+}
