@@ -1,3 +1,10 @@
+<?php
+session_start();
+require_once('./include/products.php');
+$products = new Products();
+$showProducts = $products->FetchAllproducts();
+$Prod = mysqli_fetch_all($showProducts, MYSQLI_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +29,14 @@
   </nav>
   <div class="wrapper">
     <div class="card-container">
+    <?php foreach ($Prod as $p) : ?>
       <div class="card">
+        <img src="./static/images/<?php echo $p['image']; ?>" alt="" />
+        <p><b><?php echo $p['name']; ?></b></p>
+        <p class="price">$<?php echo $p['price']; ?></p>
+      </div>
+      <?php endforeach; ?>
+      <!-- <div class="card">
         <img src="./static/images/red-dress1.jpg" alt="" />
         <p><b>Women Red dress</b></p>
         <p class="price">Rs. 999</p>
@@ -51,12 +65,7 @@
         <img src="./static/images/red-dress1.jpg" alt="" />
         <p><b>Women Red dress</b></p>
         <p class="price">Rs. 999</p>
-      </div>
-      <div class="card">
-        <img src="./static/images/red-dress1.jpg" alt="" />
-        <p><b>Women Red dress</b></p>
-        <p class="price">Rs. 999</p>
-      </div>
+      </div> -->
     </div>
     <div class="right-menu">
       <div class="search-box">

@@ -1,5 +1,5 @@
 <?php
-class Databases
+class Config
 {
   public $con;
   public $error;
@@ -13,4 +13,4 @@ class Databases
 }
 
 global $db;
-$db = new Databases();
+$db = new Config();
